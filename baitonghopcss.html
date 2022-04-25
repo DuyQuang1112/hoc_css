@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baitonghopcss</title>
+    <style>
+        #totalDiv {
+            width: 100%;
+            height: 1300px;
+            /* background-color: orange; */
+        }
+        #topDiv {
+            width: 100%;
+            height: 4%;
+            /* background-color: pink; */
+        }
+        #topDiv > .left{
+            width: 20%;
+            height: 100%;
+            /* background-color: orange; */
+            float: left;       
+        }
+        #topDiv > .left > .left{
+            width: 25%;
+            height: 100%;
+            /* background-color: white; */
+            float: left;       
+        }
+        #topDiv > .left > .right{
+            width: 75%;
+            height: 100%;
+            /* background-color: white; */
+            float: left;       
+        }
+        #topDiv > .right{
+            width: 80%;
+            height: 100%;
+            /* background-color: yellow; */
+            float: left;
+        }    
+        #topDiv > .right > .left{
+            width: 87%;
+            height: 100%;
+            /* background-color: white; */
+            float: left;
+            text-align: right;
+        }
+        #topDiv > .right > .right{ 
+            width: 13%;
+            height: 100%;
+            /* background-color: pink; */
+            float: left;
+            text-align: right;
+        }
+        #midDiv{
+            width: 100%;
+            height: 18%;
+            /* background-color: black; */
+        }
+        #midDiv > .left{
+            width: 9%;
+            height: 100%;
+            float: left;
+            background-color: rgb(19, 18, 18);
+        }
+        #midDiv > .mid{
+            width: 66%;
+            height: 100%;
+            float: left;
+            background-color: rgb(19, 18, 18);
+        }
+        #midDiv > .right{
+            width: 25%;
+            height: 100%;
+            float: left;
+            background-color: rgb(19, 18, 18);
+        }
+        #botDiv{
+            width: 100%;
+            height: 79%;
+            /* background-color: pink; */
+        }
+        #botDiv > .left{
+            width: 9%;
+            height: 100%;
+            float: left;
+            /* background-color: blue; */
+
+        }
+        #botDiv > .center{
+            width: 83%;
+            height: 100%;
+            float: left;
+            /* background-color: green; */
+        }
+        #botDiv > .center > .top{
+            width: 100%;
+            height: 53%;
+            /* background-color: purple; */
+        }
+        #botDiv > .center > .top > .left{
+            width: 50%;
+            height: 100%;
+            float: left;
+            /* background-color: pink; */
+        }
+        #botDiv > .center > .top > .right{
+            width: 50%;
+            height: 100%;
+            float: left;
+            /* background-color: purple; */
+        }
+        #botDiv > .center > .bot{
+            width: 100%;
+            height: 47%;
+            /* background-color: orange; */
+        }
+        #botDiv > .center > .bot > .left{
+            width: 34%;
+            height: 100%;
+            float: left;
+            /* background-color: green; */
+        }
+        #botDiv > .center > .bot > .center{
+            width: 34%;
+            height: 100%;
+            float: left;
+            /* background-color: steelblue; */
+        }
+        #botDiv > .center > .bot .right{
+            width: 32%;
+            height: 100%;
+            float: left;
+            /* background-color: chartreuse; */
+        }
+        #botDiv > .right{
+            width: 2%;
+            height: 100%;
+            float: left;
+            /* background-color: red; */
+        }
+    </style>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        ul > li{
+            display: inline-block;
+            text-align: left;
+        }
+        ul > li > ul{
+            display: none;
+        }
+        ul > li > ul > li{
+            background-color: rgb(255, 255, 255);
+            width: 200px;
+            
+        }
+        ul > li:hover ul{
+            display: block;
+            position: absolute;
+        }
+        ul > li{
+            position: relative;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="totalDiv">
+        <div id="topDiv">
+            <div class="left">
+                <div class="left">
+                    <img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\logo.jpg" style="height: 100%;" >
+                </div>
+                <div class="right">
+                    <font style="color: grey; position: absolute; top: 26px;"> &emsp; Ideas worth spreading</font>
+                </div>
+            </div>
+            <div class="right">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <a href="#"><strong>WATCH</strong> &emsp;</a>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <a href="#"> 
+                                        <strong><span style="font-size: 20px;">TED Talks</span></strong> <br>
+                                        Browse the library of TED talks and speakers
+                                    </a>
+                                    <br>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">TED Recommends</span></strong> <br>
+                                        Get TED Talks picked just for you
+                                    </a>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">TED Playlists</span></strong> <br>
+                                        100+ collections of TED Talks, for curious minds
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><strong>DISCOVER</strong> &emsp;</a>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Topics</span></strong> <br>
+                                        Explore TED offerings by topic
+                                    </a>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Podcasts</span></strong> <br>
+                                        Explore the TED audio collective
+                                    </a>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Ideas Blog</span></strong> <br>
+                                        Our daily coverage of the world of ideas
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><strong>ATTEND</strong> &emsp;</a>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Conferences</span></strong> <br>
+                                        Take part in our events: TED, TEDGlobal and more
+                                    </a>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">TEDx Events</span></strong> <br>
+                                        Find and attend local, independently organized events
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><strong>PARTICIPATE</strong> &emsp;</a>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Nominate</span></strong> <br>
+                                        Recommend speakers, TED Prize recipients, Fellows and more
+                                    </a>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Organize a local TEDx Event</span></strong> <br>
+                                        Rules and resources to help you plan a local TEDx event
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><strong>ABOUT</strong> &emsp;</a>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Our Organization</span></strong> <br>
+                                        Our mission, history, team, and more
+                                    </a>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="#">
+                                        <strong><span style="font-size: 20px;">Conferents</span></strong> <br>
+                                        TED Conferences, past, present, and future
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><strong>ABOUT</strong> &emsp;</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="right">
+                    <a href="#"><img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\memandsearch.jpg" style="height: 100%;width: 100%;"></a>
+                </div>
+            </div>
+        </div>
+        <div id="midDiv">
+            <div class="left">
+
+            </div>
+            <div class="mid">
+                <br> <br> 
+                <span style="color: white; font-size: 25px;"><strong>Become a TED Member</strong></span> <br>
+                <font size="5" color="white">Engage with TED in a whole new way. TED Members earn exclusive access to unforgettable events with big names from the <br> TED stage, inspiring conversations with a global community, and more.</font>
+                <br>
+                <a href="#"><img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\jointoday.jpg"></a>
+            </div>
+            <div class="right">
+                <br> <br>
+                <img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\membership_banner.png" style="height: 65%;width: 80%;">
+            </div>
+        </div>
+        <div id="botDiv">
+            <div class="left">
+
+            </div>
+            <div class="center">
+                <div class="top">
+                    <div class="left">
+                        <br>
+                        <h2>Featured</h2> <br>
+                        <h2><span style="color: black; font-size: 40px;">Elon Musk: A future worth getting <br> excited about</span></h2>
+                        <span style="color: black; font-size: 19px;">
+                            What's on Elon Musk's mind? In this exclusive interview, the head of Tesla, SpaceX, <br>
+                            The Boring Company and Neuralink details the radical innovations he's working on <br>
+                            — from humanoid robots to the otherworldly Starship to brain-machine interfaces <br>
+                            and more. <br> <br>
+                        </span>
+                        <a href="#"><img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\watchnow.jpg"></a>
+                    </div>
+                    <div class="right">
+                        <br> <br> <br> <br>
+                        <img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\elonmusk1.jpg" style="height: 80%; width: 100%;">
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="left">
+                        <br>
+                        <a href="#">
+                            <img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\billgate1.jpg" style="height: 60%; width: 96%;">      
+                            <h5><font color="grey">BILL GATE</font></h5>
+                            <span style="font-size:32px;">
+                                <strong>
+                                    We can make COVID-19 the last pandemic
+                                </strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="center">
+                        <br>
+                        <a href="#">
+                            <img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\AllysonFelix1.jpg" style="height: 60%; width: 96%;">      
+                            <h5><font color="grey">ALLYSON FELIX</font></h5>
+                            <span style="font-size:32px;">
+                                <strong>
+                                    An Olympic champion's <br> unwavering advocacy for mothers <br> in sports
+                                </strong>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <br>
+                        <a href="#">
+                            <img src="C:\Users\ASUS TUF\dropbox2\baitonghopcsshtml\imgbaitonghop\GarryKasparov.jpg" style="height: 60%; width: 96%;">      
+                            <h5><font color="grey">GARRY KASPAROV</font></h5>
+                            <span style="font-size:32px;">
+                                <strong>
+                                    Stand with Ukraine in the fight against evil
+                                </strong>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
